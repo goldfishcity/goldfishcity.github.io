@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="wifeday2025cs.css">
+</head>
+<body>
+<div class="containerlvl1">
+
+<div class="btn">
+    <img class="btn" onclick="buttonClick(lovingList)" src="https://i.ibb.co/m5vsnrWQ/pixil-frame-0-3.png">
+</div>
+
+<div class="btn">
+  <img class="btn" onclick="buttonClick(loveLetter)" src="https://i.ibb.co/SwSMcKfD/pixil-frame-0-4.png">
+</div>
+
+<div class="btn">
+  <img class="btn" onclick="giftClick()" src="https://i.ibb.co/RpMr0r0z/pixil-frame-0-5.png">
+</div>
+
+<div></div>
+
+<div>
+  <img style="width: 180%; position: relative; right: 80px" src="https://i.ibb.co/nsyyJVxS/Unbenannt-24-Ma-rz-2025-08-54-1.jpg">
+</div>
+
+<div></div>
+
+</div>
+
+
+
+<div class="containerlvl1">
+
+  <div></div>
+
+  <div class="card" style="text-align: center; background-color: rgb(205, 165, 232); height: 600px; width: 500px; overflow-y: scroll; margin: auto">
+    <div>
+    </div>
+
+
+    <p id="purplecard">
+
+    </p>
+
+
+
+   <div></div>
+
+</div>
+
+<script>
+
+document.body.style.backgroundColor = "black";
+
+let lovingList = ["things I love about her (my wife)...", "her button nose", "all the love she has", "all the kisses she gives me", "her pretty face", "her eyes", "i like it when she makes funny expressions", "her tummy", "the way her lips are shaped", "knuckles", "when she calls me pet names", "talking about our future together", "her writing", "her art", "her voice", "making OCs with her", "listening to her OC lore", "she sings so cute", "her smile makes me happy", "listening to her talk about people she loves", "listening to her talk about things she wants to do", "listening to her tell me stories", "her tiddies", "her thighs", "seeing her face makes me so happy", "whenever i know she's happy", "whenever i know she knows i love her"];
+let loveLetter = 
+["to my dearest,", "Happy birthday Aisha <3 I'm so so happy to get to celebrate your birthday twice. I want to celebrate it next year too, and the year after that, and every year after that too. i want to see all the birthdays you have until we're both old and wrinkly and then the birthdays after that too :3 I want to be in your life forever. I want you to love me forever and I want to love you forever too. I'm so happy loving you- I want to see your smiles and hear your laughs more often, I want to be the reason you're happy <3", "I hope your birthday is soso good my love and if it isn't i hope the next one is <3 one day i'll bake you a cake and we'll blow out the candles together and i'll tell you happy brithday to your face with my voice!! but for now i can't do that so hopefully my little websites convey how much love i have for you. i hope you know forever that you're everything to me", "- yours "];
+let gift = document.createElement("img");
+gift.setAttribute("src", "https://i.ibb.co/Vpc4ddWN/IMG-0668.jpg");
+gift.setAttribute("width", "450")
+let angelyuugift = document.createElement("img");
+angelyuugift.setAttribute("src", "https://i.ibb.co/3902rbNv/image.png");
+angelyuugift.setAttribute("width", "450")
+
+function buttonClick(input) {
+  let innertext = "";
+  document.getElementById("purplecard").innerHTML = "";
+   for (let i = 0; i < input.length; i++) {
+    innertext += input[i] + "</br>" + "</br>";
+   }
+  document.getElementById("purplecard").innerHTML = innertext;
+}
+
+function giftClick() {
+  document.getElementById("purplecard").innerHTML = "";
+  document.getElementById("purplecard").appendChild(gift);
+  document.getElementById("purplecard").appendChild(angelyuugift);
+}
+
+</script>
+</body>
+
+</html>
+
